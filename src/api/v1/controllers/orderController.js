@@ -8,8 +8,8 @@ const insertDB = async (req, res) => {
     const payload = req.body
     console.log("cek payload ", payload);
     
-    const data = await client.query('its your DB '+ payload.userID)
-    return res.json({code: 300,response:"saldo nggk cukup"})
+    await client.query('its your DB '+ payload.userID)
+    return res.json({response:"ok"})
     
 }
 
