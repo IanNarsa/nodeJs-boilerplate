@@ -1,0 +1,19 @@
+import {client} from "../config/db.Config"
+
+const hai = async (req, res) => {
+    res.json({check: "complate"})
+}
+
+const insertDB = async (req, res) => {
+    const payload = req.body
+    console.log("cek payload ", payload);
+    
+    const data = await client.query('its your DB '+ payload.userID)
+    return res.json({code: 300,response:"saldo nggk cukup"})
+    
+}
+
+module.exports = {
+    hai,
+    insertDB
+}

@@ -1,0 +1,40 @@
+{
+  "name": "todolistapi",
+  "version": "1.0.0",
+  "description": "RESTful todoListApi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js --exec babel-node",
+    "build": "babel src -d dist",
+    "serve": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/generalgmt/RESTfulAPITutorial.git"
+  },
+  "keywords": [
+    "RESTful",
+    "API",
+    "Tutorial"
+  ],
+  "author": "olatunde garuba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/generalgmt/RESTfulAPITutorial/issues"
+  },
+  "homepage": "https://github.com/generalgmt/RESTfulAPITutorial#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^5.7.7",
+    "pg": "^8.7.1",
+    "request": "^2.88.2"
+  }
+}
